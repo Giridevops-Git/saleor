@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('vcs') {
             steps {
-                git branch: 'main', url: 'https://github.com/Giridevops-Git/saleor.git'
+                git branch: 'saleor-brc', url: 'https://github.com/Giridevops-Git/saleor.git'
             }
         }
         stage('docker image build') {
