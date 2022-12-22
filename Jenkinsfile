@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t girishg/saleor:QA'
+                sh 'docker image build -t girishg/saleor:QA .'
             }
         }
         stage('push image to registry') {
