@@ -11,12 +11,12 @@ pipeline {
         }
         stage('docker image build') {
             steps {
-                sh 'docker image build -t girishg/saleor:DEV .'
+                sh 'docker image build -t girishg/saleor:QA'
             }
         }
         stage('push image to registry') {
             steps {
-                sh 'docker image push girishg/saleor:DEV'
+                sh 'docker image push girishg/saleor:QA'
             }
         }
     }
